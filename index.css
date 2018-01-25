@@ -1,8 +1,8 @@
 body{
     background:black;
     font-family: 'Josefin Sans', sans-serif;
-   
 }
+
 
 .welcome-slide {
     color: white;
@@ -16,4 +16,15 @@ body{
 
 .welcome-text {
     font-size: 100px;
+}
+
+.hidden {
+    opacity : 0;
+    transition: opacity 2s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
 }
