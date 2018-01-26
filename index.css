@@ -18,9 +18,9 @@ body{
     font-size: 100px;
 }
 
-.hidden {
+.hidden1, .hidden2, .hidden3, .hidden4 {
     opacity : 0;
-    transition: opacity 2s;
+    transition: all .3s ease;
     height: 100%;
     width: 100%;
     display: flex;
@@ -28,3 +28,14 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.background-img {
+    background: url(assets/img/landscape_salinas.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    color: white;
+}
+
+
