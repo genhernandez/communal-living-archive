@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,27 +11,64 @@
     <link rel="stylesheet" href="index.css">
       
     <!--jquery-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+      
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+      <script src="vendors/jquery.easings.min.js"></script>
 
-    <title></title>
+      <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` --><script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+       <script type="text/javascript" src="jquery.fullPage.js"></script>
+      
+      <script>
+        $(document).ready(function() {
+	       $('#fullpage').fullpage({
+               css3: true
+           });
+        });
+      </script>
+      
+      <style type="text/css">
+          .section {
+              font-size: 6em;
+          }
+      </style>
+    <title>Communal Living Archive</title>
   </head>
   <body>
-      <div class="welcome-slide hidden1">
-        <h1 class="welcome-text">Welcome To</h1>
-      </div> 
-      <div class="welcome-slide hidden2">
-        <h1 class="welcome-text">Queer Archives</h1>
-      </div>
-      <div class="welcome-slide hidden3">
-        <h1 class="welcome-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</h1>
-      </div>
-      <div class="welcome-slide hidden4 background-img">
-      </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+      <div id="fullpage">
+        <section class="welcome-section section">
+            <div class="welcome-slide hidden1">
+                <h1 class="welcome-text">Welcome To</h1>
+            </div> 
+            <div class="welcome-slide hidden2">
+                <h1 class="welcome-text">The Communal Living Archive</h1>
+            </div>
+            <div class="welcome-slide hidden3">
+                <h1 class="welcome-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</h1>
+            </div>
+            <div class="welcome-slide hidden4 background-img">
+                <h1 class="welcome-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</h1>
+                <div class="scroll-button">
+                    <a href="#second-section">
+                        <span class="bottom"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="second-content-section section" id="second-section">
+                <div class="second-content-slide slide" style="background-color:red;">
+                    <h1> I'm in the second section</h1>
+                </div>
+                <div class="second-content-slide slide" style="background-color:blue;">
+                    <h1> I'm in the second section</h1>
+                </div>
+                <div class="second-content-slide slide" style="background-color:yellow;">
+                    <h1> I'm in the second section</h1>
+                </div>
+        </section>
+        </div>
       <script>  
           var elements = ['hidden1', 'hidden2', 'hidden3', 'hidden4'];
 
@@ -45,6 +82,8 @@
                 }, 2500 * (i + 1));
             }
         }
+          
+          
       </script>
   </body>
     
