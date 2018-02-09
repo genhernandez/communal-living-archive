@@ -3,7 +3,9 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
+.fp-tableCell {
+    display: block;
+}
 .welcome-slide {
     color: white;
     height: 100%;
