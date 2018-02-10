@@ -4,6 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!--A-frame requirements -->
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+<!--    <script src="components/set-image.js"></script>-->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -39,7 +47,7 @@
   </head>
   <body>
       <div id="fullpage">
-        <section class="welcome-section section">
+        <section class="welcome-section section" data-anchor="firstPage">
             <div class="welcome-slide hidden1">
                 <h1 class="welcome-text">Welcome To</h1>
             </div> 
@@ -51,39 +59,35 @@
             </div>
             <div class="welcome-slide hidden4 background-img">
                 <h1 class="welcome-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</h1>
-                <div class="scroll-button">
-                    <a href="#second-section">
-                        <span class="bottom"></span>
-                    </a>
-                </div>
             </div>
         </section>
-        <section class="second-content-section section" id="second-section" style="background-color:purple;">
+        <section class="second-content-section section" data-anchor="secondPage" id="second-section" style="background-color:purple;">
                 <div class="second-content-slide">
                     <h1> I'm in the second section</h1>
                 </div>
           </section>
-          <section class="third-content-section section" id="third-section" style="background-color:blue;">
+          <section class="third-content-section section" data-anchor="thirdPage" id="third-section" style="background-color:blue;">
                 <div class="third-content-slide">
                     <h1 style="color:white;"> I'm in the third section</h1>
                 </div>
           </section>
-          <section class="fourth-content-section section" id="fourth-section" style="background-color:green;"s>
+          <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" style="background-color:green;"s>
                 <div class="fourth-content-slide">
                     <h1> I'm in the fourth section</h1>
-                </div>
+                    <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
+              </div>
         </section>
-        <section class="fifth-content-section section" id="fifth-section" style="background-color:yellow;">
+        <section class="fifth-content-section section" data-anchor="fifthPage" id="fifth-section" style="background-color:yellow;">
                 <div class="fifth-content-slide">
                     <h1> I'm in the fifth section</h1>
                 </div>
         </section>
-        <section class="sixth-content-section section" id="sixth-section" style="background-color:orange;">
+        <section class="sixth-content-section section" data-anchor="sixthPage" id="sixth-section" style="background-color:orange;">
                 <div class="sixth-content-slide">
                     <h1> I'm in the sixth section</h1>
                 </div>
         </section>
-        <section class="seventh-content-section section" id="seventh-section" style="background-color:red;">
+        <section class="seventh-content-section section" data-anchor="seventhPage" id="seventh-section" style="background-color:red;">
                 <div class="seventh-content-slide">
                     <h1> I'm in the seventh section</h1>
                 </div>

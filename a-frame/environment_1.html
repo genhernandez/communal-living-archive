@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+     <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="pano1" src="../assets/img/pano/pano_2.jpg">
+                <img id="groundTexture" src="../assets/textures/grass_texture.jpg">
+                
+            </a-assets>
+            <a-sky src="#pano1" ></a-sky>
+            <a-plane src="#groundTexture" rotation="-90 0 0" height="50" width="50"></a-plane>
+
+<!--
+            <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+-->
+        </a-scene>
+    </body>
+
+</html>
