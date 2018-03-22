@@ -2,6 +2,7 @@ body{
     background:black;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100%;
+    margin: 0;
 }
 
 .fp-tableCell {
@@ -20,7 +21,9 @@ body{
 
 
 
-
+canvas {
+    height: 100%;
+}
 
 .welcome-text {
     font-size: 1em;
