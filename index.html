@@ -29,6 +29,9 @@
        <script type="text/javascript" src="jquery.fullPage.js"></script>
           <link rel="stylesheet" href="index.css">
 
+      <!--This is the VR View import -->
+<!--      <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
+      <script src="vrview/build/vrview.js"></script>
       
       <script>
         $(document).ready(function() {
@@ -73,9 +76,23 @@
           </section>
           <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" style="background-color:green;"s>
                 <div class="fourth-content-slide">
-                    <h1> I'm in the fourth section</h1>
+                    <div id='vrview'></div>
                     <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
               </div>
+        <script>
+           window.addEventListener('load', onVrViewLoad());
+
+          function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView = new VRView.Player('#vrview', {
+            width: '100%',
+            height: '100%',
+            image: 'assets/img/pano/streetView.jpg',
+            
+            is_stereo: false
+            });
+          }         
+        </script>
         </section>
         <section class="fifth-content-section section" data-anchor="fifthPage" id="fifth-section" style="background-color:yellow;">
                 <div class="fifth-content-slide">
@@ -107,6 +124,8 @@
                 }, 2500 * (i + 1));
             }
         }
+          
+    
           
           
       </script>
