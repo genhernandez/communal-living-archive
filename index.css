@@ -1,6 +1,7 @@
 body{
     background:black;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 100%;
 }
 
 .fp-tableCell {
@@ -16,25 +17,22 @@ body{
     justify-content: center;
 }
 
-@media only screen (min-width: 769px){
-    .section {
-        max-width:80%;
-    }
-}
+
+
+
+
 
 .welcome-text {
-    font-size: 100px;
+    font-size: 1em;
+}
+
+.special-text{
+    margin: 0em 0em 0em 4em;
 }
 
 .hidden1, .hidden2, .hidden3, .hidden4 {
     opacity : 0;
     transition: all .3s ease;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
 }
 
 .background-img {
@@ -46,6 +44,15 @@ body{
     color: white;
 }
 
+@media only screen and (max-width: 420px){
+    body {
+        font-size: 0.5em;
+    }
+    
+    .special-text{
+        margin: 0em 0em 0em 1em;
+    }
+}
 /*
 .bottom {
     width: 10em;
