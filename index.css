@@ -18,9 +18,17 @@ body{
     justify-content: center;
 }
 
+iframe.fullScreen {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-
-
+iframe.hide {
+    display: none;
+}
 canvas {
     height: 100%;
 }
