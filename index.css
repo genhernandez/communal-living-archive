@@ -38,6 +38,10 @@ canvas {
     transition: all .3s ease;
 }
 
+#vrview {
+    height: 100%;
+}
+
 .background-img {
     background: url(assets/img/landscape_salinas.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
