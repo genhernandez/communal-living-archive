@@ -36,6 +36,13 @@ body{
     
 }
 
+.fourth-content-section{
+    background: url("assets/img/cavour_club.jpg") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
 
 .active .animation-delay--2{
     -webkit-animation-delay: 2s;

@@ -74,9 +74,8 @@
                     <h1 style="color:white;"> I'm in the third section</h1>
                 </div>
           </section>
-          <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" style="background-color:green;"s>
+          <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" >
                 <div class="fourth-content-slide" id="add-here">
-                    <button onclick="makeFullScreen()" class="btn btn-danger">Launch 360</button>
                     <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
               </div>
               <div id="launch-360">
@@ -168,7 +167,6 @@
             if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen &&                   !document.msFullscreenElement) {
                 var elem = document.getElementById('vrview');
                 elem.parentNode.removeChild(elem);
-//                document.getElementById('launch-360').style.opacity="1";
                 $('#launch-360').css("opacity", "1");
 
             }
