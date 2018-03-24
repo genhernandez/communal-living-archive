@@ -25,7 +25,8 @@
       <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
       <script src="vendors/jquery.easings.min.js"></script>
 
-      <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` --><script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+      <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+      <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
        <script type="text/javascript" src="jquery.fullPage.js"></script>
           <link rel="stylesheet" href="index.css">
 
@@ -78,6 +79,18 @@
                     <button onclick="makeFullScreen()" class="btn btn-danger">Launch 360</button>
                     <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
               </div>
+              <div id="launch-360">
+                <div class="component_cta_container animation--grow animation-delay--2 cta--colored-alpha js-show-pano mdl-button--360 is-hidden-edge">
+                <a class="mdl-button mdl-button--fab component_cta mdl-js-ripple-effect mdl-js-button" href="#" onclick="return makeFullScreen()">
+                  <div>
+                    <div class="component_cta_sprite--360"></div>
+                  </div>
+                  <span class="mdl-button_ripple-container">
+                  <span class="mdl-ripple is-animating" style="width: 217.023px; height: 217.023px; transform: translate(-50%, -50%) translate(36px, 29px);"></span>
+                  </span>
+                </a>
+              </div>
+            </div>
         </section>
         <section class="fifth-content-section section" data-anchor="fifthPage" id="fifth-section" style="background-color:yellow;">
                 <div class="fifth-content-slide">
@@ -135,12 +148,13 @@
           } 
           
         function makeFullScreen() {
+            $('#launch-360').css("opacity", "0");
+
             var div = document.createElement('div');
             div.setAttribute('id','vrview' );
             document.getElementById('add-here').appendChild(div);
             
             onVrViewLoad();
-
             document.getElementsByTagName("iframe")[0].className = "fullScreen";
             var elem = document.body;
             requestFullScreen(elem);
@@ -154,6 +168,9 @@
             if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen &&                   !document.msFullscreenElement) {
                 var elem = document.getElementById('vrview');
                 elem.parentNode.removeChild(elem);
+//                document.getElementById('launch-360').style.opacity="1";
+                $('#launch-360').css("opacity", "1");
+
             }
           }
           
