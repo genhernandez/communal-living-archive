@@ -30,7 +30,7 @@
           <link rel="stylesheet" href="index.css">
 
       <!--This is the VR View import -->
-      <script src="vrview/build/vrview.js"></script>
+      <script src="/vrview/build/vrview.js"></script>
       
       <script>
         $(document).ready(function() {
@@ -74,24 +74,10 @@
                 </div>
           </section>
           <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" style="background-color:green;"s>
-                <div class="fourth-content-slide">
-                    <div id='vrview'></div>
+                <div class="fourth-content-slide" id="add-here">
+                    <button onclick="makeFullScreen()" class="btn btn-danger">Launch 360</button>
                     <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
               </div>
-        <script>
-           window.addEventListener('load', onVrViewLoad());
-
-          function onVrViewLoad() {
-            // Selector '#vrview' finds element with id 'vrview'.
-            var vrView = new VRView.Player('#vrview', {
-            width: '100%',
-            height: '100%',
-            image: 'assets/img/pano/streetView.jpg',
-            
-            is_stereo: false
-            });
-          }         
-        </script>
         </section>
         <section class="fifth-content-section section" data-anchor="fifthPage" id="fifth-section" style="background-color:yellow;">
                 <div class="fifth-content-slide">
@@ -123,6 +109,53 @@
                 }, 2500 * (i + 1));
             }
         }
+          
+        function requestFullScreen(element) {
+            // Supports most browsers and their versions.
+            var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+            if (requestMethod) { // Native full screen.
+                requestMethod.call(element);
+            } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript !== null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        }
+          
+        function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView = new VRView.Player('#vrview', {
+            width: '100%',
+            height: '100%',
+            image: 'assets/img/pano/streetView.jpg',
+            is_stereo: false
+            });
+          } 
+          
+        function makeFullScreen() {
+            var div = document.createElement('div');
+            div.setAttribute('id','vrview' );
+            document.getElementById('add-here').appendChild(div);
+            
+            onVrViewLoad();
+
+            document.getElementsByTagName("iframe")[0].className = "fullScreen";
+            var elem = document.body;
+            requestFullScreen(elem);
+        }
+          document.addEventListener('fullscreenchange', exitHandler);
+          document.addEventListener('webkitfullscreenchange', exitHandler);
+          document.addEventListener('mozfullscreenchange', exitHandler);
+          document.addEventListener('MSFullscreenChange', exitHandler);
+
+          function exitHandler() {
+            if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen &&                   !document.msFullscreenElement) {
+                var elem = document.getElementById('vrview');
+                elem.parentNode.removeChild(elem);
+            }
+          }
           
     
           
