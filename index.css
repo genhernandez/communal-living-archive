@@ -32,7 +32,7 @@ body{
     }
 }
 
-#launch-360 {
+#launch-three-sixty {
     
 }
 
@@ -53,11 +53,15 @@ body{
     -webkit-animation: grow 1.4s 2 ease-in-out;
     animation: grow 1.4s 2 ease-in-out;
 }
+.button-container {
+    position:absolute;
+    width: 100%;
+}
 
 .vr-col {
     height: -webkit-fill-available;
     color: white;
-    font-size:.3em;
+    font-size:0.3em;
     flex: 1;
     display:flex;
     flex-wrap: wrap;
@@ -76,33 +80,37 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-.button-container {
-    position:absolute;
-    width: 100%;
-}
+
 .vr-button {
    margin-left:auto;
    margin-right:auto;
    display:block;
-    width: 15%;
-/*
-    position: absolute;
-    left: 20%;
-*/
-/*
-    bottom: 20px;
-    left: 20%;
-    margin-left: -28px;
-*/
+   width: 15%;
 }
+
+.three-sixty-col{
+    height: -webkit-fill-available;
+    color: white;
+    font-size:0.3em;
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.three-sixty-col-text {
+    position:absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .component_cta_container {
-    position: relative;
-    left: 80%;
-/*
-    bottom: 20px;
-    //left: 80%;
-    margin-left: -28px;
-*/
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    bottom: 1%;
     -webkit-transform: rotate(0);
     transform: rotate(0);
     transition: -webkit-transform .2s ease-out;
@@ -177,17 +185,17 @@ body{
     z-index: 0;
     overflow: hidden;
 }
-.mdl-button{
-    background: 0 0;
+.mdl-button{    
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
     border: none;
     border-radius: 2px;
     color: #000;
     position: relative;
-    height: 36px;
-    margin: 0;
+    height: 40px;
     min-width: 64px;
     padding: 0 16px;
-    display: inline-block;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -235,7 +243,7 @@ a:-webkit-any-link {
 }
 @media only screen and (min-width: 769px){
     .component_cta_container {
-        bottom: 40px;
+        bottom: 1%;
     }
 }
 .fp-tableCell {
