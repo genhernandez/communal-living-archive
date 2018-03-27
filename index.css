@@ -3,6 +3,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100%;
     margin: 0;
+    color: white;
 }
 
 @keyframes spin-sprite-small {
@@ -32,8 +33,14 @@ body{
     }
 }
 
-#launch-three-sixty {
-    
+.content-txt {
+    font-size: 5.8em;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 2.8em;
+}
+
+.launch-360 {
 }
 
 .fourth-content-section{
