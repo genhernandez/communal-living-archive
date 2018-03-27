@@ -37,7 +37,7 @@ body{
     font-size: 3.8em;
     text-align: center;
     vertical-align: middle;
-    margin-top: 1.2em;
+    margin-top: 1.5em;
 }
 
 .launch-360 {
@@ -80,6 +80,7 @@ body{
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 0.3em;
 }
 .vr-col > a {
     position:absolute;
