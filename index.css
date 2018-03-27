@@ -77,14 +77,14 @@ body{
 
 .vr-button-text {
     position:absolute;
-    bottom: 3%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.0em;
 }
 .vr-col > a {
     position:absolute;
-    bottom: 1%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -93,9 +93,9 @@ body{
    margin-left:auto;
    margin-right:auto;
    display:block;
-   width: 15%;
+   width: 20%;
    color: white;
-   font-size:0.45em;
+   font-size:0.35em;
 }
 
 .three-sixty-col{
@@ -110,7 +110,7 @@ body{
 
 .three-sixty-col-text {
     position:absolute;
-    bottom: 3%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -120,7 +120,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     display:block;
-    bottom: 1%;
+    bottom: 3%;
     -webkit-transform: rotate(0);
     transform: rotate(0);
     transition: -webkit-transform .2s ease-out;
@@ -253,7 +253,7 @@ a:-webkit-any-link {
 }
 @media only screen and (min-width: 769px){
     .component_cta_container {
-        bottom: 1%;
+        bottom: 3%;
     }
 }
 .fp-tableCell {
