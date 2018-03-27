@@ -3,6 +3,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100%;
     margin: 0;
+    color: white;
 }
 
 @keyframes spin-sprite-small {
@@ -32,8 +33,14 @@ body{
     }
 }
 
-#launch-360 {
-    
+.content-txt {
+    font-size: 5.8em;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 2.8em;
+}
+
+.launch-360 {
 }
 
 .fourth-content-section{
@@ -53,12 +60,64 @@ body{
     -webkit-animation: grow 1.4s 2 ease-in-out;
     animation: grow 1.4s 2 ease-in-out;
 }
+.button-container {
+    position:absolute;
+    width: 100%;
+}
+
+.vr-col {
+    height: -webkit-fill-available;
+    color: white;
+    font-size:0.3em;
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vr-button-text {
+    position:absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.vr-col > a {
+    position:absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vr-button {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+   width: 15%;
+}
+
+.three-sixty-col{
+    height: -webkit-fill-available;
+    color: white;
+    font-size:0.3em;
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.three-sixty-col-text {
+    position:absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .component_cta_container {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -28px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    bottom: 1%;
     -webkit-transform: rotate(0);
     transform: rotate(0);
     transition: -webkit-transform .2s ease-out;
@@ -133,17 +192,17 @@ body{
     z-index: 0;
     overflow: hidden;
 }
-.mdl-button{
-    background: 0 0;
+.mdl-button{    
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
     border: none;
     border-radius: 2px;
     color: #000;
     position: relative;
-    height: 36px;
-    margin: 0;
+    height: 40px;
     min-width: 64px;
     padding: 0 16px;
-    display: inline-block;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -191,7 +250,7 @@ a:-webkit-any-link {
 }
 @media only screen and (min-width: 769px){
     .component_cta_container {
-        bottom: 40px;
+        bottom: 1%;
     }
 }
 .fp-tableCell {

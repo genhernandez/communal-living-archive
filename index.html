@@ -7,10 +7,6 @@
       
     <!--A-frame requirements -->
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
 <!--    <script src="components/set-image.js"></script>-->
 
     <!-- Bootstrap CSS -->
@@ -75,20 +71,29 @@
                 </div>
           </section>
           <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" >
-                <div class="fourth-content-slide" id="add-here">
-                    <a href="a-frame/environment_1.html" class="btn btn-danger"> Go to Environment</a>              
-              </div>
-              <div id="launch-360">
-                <div class="component_cta_container animation--grow animation-delay--2 cta--colored-alpha js-show-pano mdl-button--360 is-hidden-edge">
-                <a class="mdl-button mdl-button--fab component_cta mdl-js-ripple-effect mdl-js-button" href="#" onclick="return makeFullScreen()">
-                  <div>
-                    <div class="component_cta_sprite--360"></div>
-                  </div>
-                  <span class="mdl-button_ripple-container">
-                  <span class="mdl-ripple is-animating" style="width: 217.023px; height: 217.023px; transform: translate(-50%, -50%) translate(36px, 29px);"></span>
-                  </span>
-                </a>
-              </div>
+            <div class="fourth-content-slide" id="add-here">
+                <div class="button-container row launch-360">
+                    <div class="col-md vr-col">
+                    <p class="content-txt">This is the </p>
+                    <p class="vr-button-text">Visit the Cavour Club</p>
+                    <a href="a-frame/environment_1.html" class="btn btn-danger vr-button" style="color:white;"> Go to Environment</a>    
+                    </div>              
+                    <div class="col-md three-sixty-col" >
+                        <p class="three-sixty-col-text">Visit the Cavour Club in 360</p>
+                    <div class="launch-360">
+                        <div class="component_cta_container animation--grow animation-delay--2 cta--colored-alpha js-show-pano mdl-button--360 is-hidden-edge">
+                            <a class="mdl-button mdl-button--fab component_cta mdl-js-ripple-effect mdl-js-button" href="a-frame/360_view_cavour.html">
+                                <div>
+                                    <div class="component_cta_sprite--360"></div>
+                                </div>
+                                <span class=" mdl-button_ripple-container">
+                                    <span class="mdl-ripple is-animating" style="width: 217.023px; height: 217.023px; transform: translate(-50%, -50%) translate(36px, 29px);"></span>
+                                </span>
+                            </a>
+                        </div>
+                     </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="fifth-content-section section" data-anchor="fifthPage" id="fifth-section" style="background-color:yellow;">
@@ -121,59 +126,6 @@
                 }, 2500 * (i + 1));
             }
         }
-          
-        function requestFullScreen(element) {
-            // Supports most browsers and their versions.
-            var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-
-            if (requestMethod) { // Native full screen.
-                requestMethod.call(element);
-            } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-                var wscript = new ActiveXObject("WScript.Shell");
-                if (wscript !== null) {
-                    wscript.SendKeys("{F11}");
-                }
-            }
-        }
-          
-        function onVrViewLoad() {
-            // Selector '#vrview' finds element with id 'vrview'.
-            var vrView = new VRView.Player('#vrview', {
-            width: '100%',
-            height: '100%',
-            image: 'assets/img/pano/streetView.jpg',
-            is_stereo: false
-            });
-          } 
-          
-        function makeFullScreen() {
-            $('#launch-360').css("opacity", "0");
-
-            var div = document.createElement('div');
-            div.setAttribute('id','vrview' );
-            document.getElementById('add-here').appendChild(div);
-            
-            onVrViewLoad();
-            document.getElementsByTagName("iframe")[0].className = "fullScreen";
-            var elem = document.body;
-            requestFullScreen(elem);
-        }
-          document.addEventListener('fullscreenchange', exitHandler);
-          document.addEventListener('webkitfullscreenchange', exitHandler);
-          document.addEventListener('mozfullscreenchange', exitHandler);
-          document.addEventListener('MSFullscreenChange', exitHandler);
-
-          function exitHandler() {
-            if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen &&                   !document.msFullscreenElement) {
-                var elem = document.getElementById('vrview');
-                elem.parentNode.removeChild(elem);
-                $('#launch-360').css("opacity", "1");
-
-            }
-          }
-          
-    
-          
           
       </script>
   </body>
