@@ -34,10 +34,10 @@ body{
 }
 
 .content-txt {
-    font-size: 5.8em;
+    font-size: 3.8em;
     text-align: center;
     vertical-align: middle;
-    margin-top: 2.8em;
+    margin-top: 1.2em;
 }
 
 .launch-360 {
@@ -93,6 +93,8 @@ body{
    margin-right:auto;
    display:block;
    width: 15%;
+   color: white;
+   font-size:1em;
 }
 
 .three-sixty-col{
