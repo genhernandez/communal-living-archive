@@ -127,58 +127,6 @@
             }
         }
           
-//        function requestFullScreen(element) {
-//            // Supports most browsers and their versions.
-//            var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-//
-//            if (requestMethod) { // Native full screen.
-//                requestMethod.call(element);
-//            } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-//                var wscript = new ActiveXObject("WScript.Shell");
-//                if (wscript !== null) {
-//                    wscript.SendKeys("{F11}");
-//                }
-//            }
-//        }
-//          
-//        function onVrViewLoad() {
-//            // Selector '#vrview' finds element with id 'vrview'.
-//            var vrView = new VRView.Player('#vrview', {
-//            width: '100%',
-//            height: '100%',
-//            image: 'assets/img/pano/streetView.jpg',
-//            is_stereo: false
-//            });
-//          } 
-//          
-//        function makeFullScreen() {
-//            $('.launch-360').css("opacity", "0");
-//            var div = document.createElement('div');
-//            div.setAttribute('id','vrview' );
-//            document.getElementById('add-here').appendChild(div);
-//            
-//            onVrViewLoad();
-//            document.getElementsByTagName("iframe")[0].className = "fullScreen";
-//            var elem = document.body;
-//            requestFullScreen(elem);
-//        }
-//          document.addEventListener('fullscreenchange', exitHandler);
-//          document.addEventListener('webkitfullscreenchange', exitHandler);
-//          document.addEventListener('mozfullscreenchange', exitHandler);
-//          document.addEventListener('MSFullscreenChange', exitHandler);
-//
-//          function exitHandler() {
-//            var changeZ = 0;
-//            if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen &&                   !document.msFullscreenElement) {
-//                var elem = document.getElementById('vrview');
-//                elem.parentNode.removeChild(elem);
-//                $('.launch-360').css("opacity", "1");
-//            }
-//          }
-//          
-//    
-//          
-          
       </script>
   </body>
     
