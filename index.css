@@ -318,7 +318,7 @@ iframe.fullScreen {
     color: white;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 420px){
+@media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;
     }
@@ -328,8 +328,8 @@ iframe.fullScreen {
     }
     
     .context-text {
-        font-size:1.8em;
-        margin-top: 10.5em;
+        font-size:0.8em;
+        margin-top: 12.5em;
     }
     
     .vr-button-text {
@@ -349,10 +349,12 @@ iframe.fullScreen {
     
     .mdl-button {
         height: 30px;
-        min-height: 60px;
+        min-width: 60px;
     }
     
     .component_cta_sprite--360 {
         height: 30px;
+        -webkit-animation: spin-sprite-small 10s steps(24) infinite;
+        animation: spin-sprite-small 10s steps(24) infinite;
     }
 }
