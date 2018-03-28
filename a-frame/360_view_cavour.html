@@ -13,19 +13,43 @@
      <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
     </head>
     <body>
+        <script>
+        AFRAME.registerComponent('audiohandler', {
+            init:function() {
+            let playing = false;
+            let audio = document.querySelector("#audio");
+            this.el.addEventListener('click', () => {
+                if(!playing) {
+                audio.play();
+                } else {
+                audio.pause();
+//              audio.currentTime = 0;
+                }
+            playing = !playing;
+            });
+        }});
+    </script>
         <a-scene>
             <a-assets>
+                <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+
+                 <img crossorigin="anonymous" id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
                 <img id="pano1" src="../assets/img/pano/streetView.jpg">    
-<!--
-                <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay
-      preload></audio>
--->
+                <audio crossorigin="anonymous" id="audio" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg"></audio>
+                <script id="link" type="text/html">
+                    <a-plane audiohandler class="link" height="1" width="1"
+                    material="shader: flat; src: ${thumb}"></a-plane>
+                </script>
             </a-assets>
-            <i class="material-icons">volume_up</i>
             <a-sky src="#pano1" ></a-sky>
+            <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+                <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+            </a-entity>
             <a-entity cursor position="0 0 -5"></a-entity>
-            <a-entity id="elmo" geometry="primitive: box" material="https://i.imgur.com/mYmmbrp.jpg"
-          sound="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav; on: click"></a-entity>
+            
+            <a-camera>
+                <a-cursor color="#FAFAFA"></a-cursor>
+            </a-camera>
         </a-scene>
     </body>
 
