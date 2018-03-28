@@ -318,7 +318,7 @@ iframe.fullScreen {
     color: white;
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (min-width: 360px) and (max-width: 420px){
     body {
         font-size: 0.5em;
     }
@@ -330,5 +330,29 @@ iframe.fullScreen {
     .context-text {
         font-size:1.8em;
         margin-top: 10.5em;
+    }
+    
+    .vr-button-text {
+        font-size: 0.65em;
+    }
+    
+    .vr-button {
+        width: 50%;
+        font-size: 0.55em;
+    }
+    
+    .three-sixty-col-text {
+        width: 100%;
+        left: 76%;
+        font-size: 0.65em;
+    }
+    
+    .mdl-button {
+        height: 30px;
+        min-height: 60px;
+    }
+    
+    .component_cta_sprite--360 {
+        height: 30px;
     }
 }
