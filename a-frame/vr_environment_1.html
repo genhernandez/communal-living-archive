@@ -35,11 +35,18 @@
         <img crossorigin="anonymous" id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
         <audio crossorigin="anonymous" id="audio" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg"></audio>
       </a-assets>
+        <a-sound geometry="primitive:ring; radiusInner: 0.5; radiusOuter: 1"
+                 material="side: double"
+                 position="0 2 -5"
+                 autoplay="false"
+                 audiohandler></a-sound>
+<!--
       <a-box audiohandler position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.2 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
       </a-box>
+-->
       <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
       </a-camera>
