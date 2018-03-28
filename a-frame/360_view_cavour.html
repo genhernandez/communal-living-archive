@@ -4,6 +4,9 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
      <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
 
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        
      <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
@@ -12,9 +15,17 @@
     <body>
         <a-scene>
             <a-assets>
-                <img id="pano1" src="../assets/img/pano/streetView.jpg">       
+                <img id="pano1" src="../assets/img/pano/streetView.jpg">    
+<!--
+                <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay
+      preload></audio>
+-->
             </a-assets>
+            <i class="material-icons">volume_up</i>
             <a-sky src="#pano1" ></a-sky>
+            <a-entity cursor position="0 0 -5"></a-entity>
+            <a-entity id="elmo" geometry="primitive: box" material="https://i.imgur.com/mYmmbrp.jpg"
+          sound="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav; on: click"></a-entity>
         </a-scene>
     </body>
 

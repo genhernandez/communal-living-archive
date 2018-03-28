@@ -3,29 +3,47 @@
   <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+      
+      <!--audio component -->
   </head>
   <body>
     <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
          threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
     <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
-    <a-scene environment="preset: forest">
+      <script>
+        AFRAME.registerComponent('audiohandler', {
+            init:function() {
+            let playing = false;
+            let audio = document.querySelector("#audio");
+            this.el.addEventListener('click', () => {
+                if(!playing) {
+                audio.play();
+                } else {
+                audio.pause();
+//              audio.currentTime = 0;
+                }
+            playing = !playing;
+            });
+        }});
+    </script>
+    <a-scene environment ="preset: dream" >
       <a-assets>
-        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <img crossorigin="anonymous" id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <audio crossorigin="anonymous" id="audio" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg"></audio>
       </a-assets>
-      
-      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+      <a-box audiohandler position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.2 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
-        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
-        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
       </a-box>
-
-<!--      <a-text value="Hello, A-Frame!" color="#FAFAFA" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>-->
-      
       <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
       </a-camera>
     </a-scene>
   </body>
 </html>
+
