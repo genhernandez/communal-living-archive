@@ -61,10 +61,12 @@
                     <h1> I'm in the second section</h1>
                 </div>
           </section>
-          <section class="third-content-section section" data-anchor="thirdPage" id="third-section" style="background-color:blue;">
-                <div class="third-content-slide">
-                    <h1 style="color:white;"> I'm in the third section</h1>
+          <section class="third-content-section section" bg-3 data-anchor="thirdPage" id="third-section">
+                <div class="third-content-slide slideshow">
+                    <img src="/assets/img/inside_cavour_1.jpg"/>
+                    <img src="/assets/img/inside_cavour_4.jpg"/>
                 </div>
+          
           </section>
           <section class="fourth-content-section section" data-anchor="fourthPage" id="fourth-section" >
             <div class="fourth-content-slide" id="add-here">
@@ -122,6 +124,19 @@
                 }, 2500 * (i + 1));
             }
         }
+          
+          var speed = 2000;
+          var run = setInterval("switchSlide()", speed);
+          $('.slideshow').ready(function() {
+            $('.slideshow img:gt(0)').hide();    
+          });
+
+          function switchSlide()
+          {
+            $('.slideshow img:first').fadeOut(1000).next().show().end().appendTo('.slideshow');
+          }
+        
+          
           
       </script>
   </body>

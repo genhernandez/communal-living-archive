@@ -6,6 +6,8 @@ body{
     color: white;
 }
 
+
+
 @keyframes spin-sprite-small {
     0% {
         background-position-x:  .5px;
@@ -42,6 +44,7 @@ body{
 
 .launch-360 {
 }
+
 
 .fourth-content-section{
     background: url("assets/img/cavour_club.jpg") center;
@@ -316,6 +319,17 @@ iframe.fullScreen {
     -o-background-size: cover;
     background-size:cover;
     color: white;
+}
+
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
 }
 
 @media only screen and (max-width: 420px){
