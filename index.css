@@ -318,6 +318,8 @@ iframe.fullScreen {
     
 }
 
+/*https://stackoverflow.com/questions/21562331/fading-between-background-images-using-only-html-css-js*/
+
 @-webkit-keyframes slider {
     from {
         background: url("assets/img/inside_cavour_1_2.jpg") no-repeat;
