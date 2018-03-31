@@ -314,7 +314,7 @@ iframe.fullScreen {
 }
 .slideshow img {
     max-width: 100%;
-    height: inherit;
+    height: auto;
     position: absolute;
     z-index: 1;
     
