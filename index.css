@@ -303,26 +303,11 @@ iframe.fullScreen {
     color: white;
 }
 
-
-/*
-.slideshow {
-    position: relative;
-}
-*/
 .material-icons {
     position: absolute;
     z-index: 2;
     margin: 1em 0em 0em 1em; 
 }
-/*
-.slideshow img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 1;
-    
-}
-*/
 
 .fadein {
   position: relative;
@@ -356,6 +341,15 @@ iframe.fullScreen {
     margin: 4em 0em 0em 4.5em;
     text-shadow: 5px 5px black;
 }
+
+.seventh-content-section{
+    background: url("assets/img/mckinley_park.png") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
 @media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;
