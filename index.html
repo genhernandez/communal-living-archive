@@ -67,7 +67,11 @@
           </section>
           <section class="third-content-section section" bg-3 data-anchor="thirdPage" id="third-section">
                 <div class="third-content-slide slideshow">
-                    <i class="material-icons" style="color:white;">volume_up</i>
+                    <i class="material-icons" id="icon" style="color:white;">volume_off</i>
+                    <audio id="inside-club" src="assets/audio/inside_cavour_club.wav" preload="auto" loop></audio>
+                    <div class="third-content-text-container">
+                        <p class="inside-club-text">Inside Cavour</p>
+                    </div>
                     <img src="/assets/img/inside_cavour_1.jpg"/>
                     <img src="/assets/img/inside_cavour_4.jpg"/>
                 </div>
@@ -139,6 +143,21 @@
           function switchSlide()
           {
             $('.slideshow img:first').fadeOut(1000).next().show().end().appendTo('.slideshow');
+          }
+          
+    
+          var aud1 = document.getElementById('inside-club');
+          
+          if(aud1){
+              document.getElementById("icon").addEventListener("click", function() {
+                  if(aud1.paused){
+                      aud1.play();
+                      document.getElementById("icon").innerHTML="volume_up";
+                  } else {
+                      aud1.pause();
+                      document.getElementById("icon").innerHTML = "volume_off";
+                  }
+              })
           }
         
           

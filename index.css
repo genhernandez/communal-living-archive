@@ -255,25 +255,7 @@ a:-webkit-any-link {
     -webkit-animation: spin-sprite-small 5s steps(24) infinite;
     animation: spin-sprite-small 5s steps(24) infinite;
 }
-/*
-@media only screen and (min-width: 769px){
-    .component_cta_container {
-        bottom: 3%;
-    }
-    
-    body {
-        font-size: 0.5em;
-    }
-    
-    .special-text{
-        margin: 0em 0em 0em 1em;
-    }
-    
-    .context-text {
-        font-size:2.8em;
-    }
-}
-*/
+
 .fp-tableCell {
     display: block;
 }
@@ -328,6 +310,7 @@ iframe.fullScreen {
 .material-icons {
     position: absolute;
     z-index: 2;
+    margin: 1em 0em 0em 1em; 
 }
 .slideshow img {
     max-width: 100%;
@@ -336,6 +319,17 @@ iframe.fullScreen {
     z-index: 1;
 }
 
+.third-content-text-container {
+    display:table;
+}
+
+.inside-club-text {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    margin: 4em 0em 0em 4.5em;
+    text-shadow: 5px 5px black;
+}
 @media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;
