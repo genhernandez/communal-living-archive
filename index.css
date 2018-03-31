@@ -314,9 +314,10 @@ iframe.fullScreen {
 }
 .slideshow img {
     max-width: 100%;
-    height: auto;
+    height: inherit;
     position: absolute;
     z-index: 1;
+    
 }
 
 .third-content-text-container {
