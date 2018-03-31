@@ -7,9 +7,7 @@
      <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-      
-      <!--audio component -->
-  </head>
+    </head>
   <body>
     <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
          threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
@@ -18,38 +16,25 @@
         AFRAME.registerComponent('audiohandler', {
             init:function() {
             let playing = false;
-            let audio = document.querySelector("#audio");
+            let audio = this.el.components.sound;
+            this.el.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg");
+            
             this.el.addEventListener('click', () => {
                 if(!playing) {
-                audio.play();
+                audio.playSound();
                 } else {
-                audio.pause();
-//              audio.currentTime = 0;
+                audio.pauseSound();
                 }
             playing = !playing;
             });
-        }});
+        }
+        })
     </script>
-    <a-scene environment ="preset: dream" >
-      <a-assets>
-        <img crossorigin="anonymous" id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
-        <audio crossorigin="anonymous" id="audio" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg"></audio>
-      </a-assets>
-        <a-sound geometry="primitive:ring; radiusInner: 0.5; radiusOuter: 1"
-                 material="side: double"
-                 position="0 2 -5"
+    <a-scene cursor="rayOrigin:mouse" environment ="preset: dream" >
+        <a-sound geometry="primitive:box; width: 1; height: 1; depth: 1;"
+                 position="0 0 -5"
                  autoplay="false"
                  audiohandler></a-sound>
-<!--
-      <a-box audiohandler position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
-        <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
-          to="0 2.2 -5"></a-animation>
-        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
-      </a-box>
--->
-      <a-camera>
-        <a-cursor color="#FAFAFA"></a-cursor>
-      </a-camera>
     </a-scene>
   </body>
 </html>
