@@ -6,34 +6,133 @@ body{
     color: white;
 }
 
-
-
-@keyframes spin-sprite-small {
-    0% {
-        background-position-x:  .5px;
-    }
-    
-    100%, 15% {
-        background-position-x: 1104px;
-    }
+.fp-tableCell {
+    display: block;
 }
 
-@keyframes grow {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    
-    35% {
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15);
-    }
-    
-    90% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+/** Welcome Slide **/
+
+.welcome-text {
+    font-size: 1em;
 }
+
+.hidden1, .hidden2, .hidden3, .hidden4 {
+    opacity : 0;
+    transition: all .3s ease;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.background-img {
+    background: url(assets/img/landscape_salinas.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    color: white;
+}
+
+/**Agriculture Industry **/
+
+.second-content-slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.agr-bg {
+     background: url(assets/img/field_1.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.agr-bg-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: url(assets/img/field_2.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.agr-bg-3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: url(assets/img/field_3.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.agr-bg-4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: url(assets/img/field_4.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+
+
+/**Cavour Club **/
 
 .content-txt {
     font-size: 3.8em;
@@ -42,27 +141,14 @@ body{
     margin-top: 2.5em;
 }
 
-.launch-360 {
+.inside-club-text {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    margin: 4em 0em 0em 4.5em;
+    text-shadow: 5px 5px black;
 }
 
-
-.fourth-content-section{
-    background: url("assets/img/cavour_club.jpg") center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-}
-
-.active .animation-delay--2{
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-}
-
-.active .animation--grow {
-    -webkit-animation: grow 1.4s 2 ease-in-out;
-    animation: grow 1.4s 2 ease-in-out;
-}
 .button-container {
     position:absolute;
     width: 100%;
@@ -138,7 +224,6 @@ body{
     color: #fff;
 }
 
-
 .component_cta{
     position: relative;
     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1),-webkit-transform .2s cubic-bezier(.4,0,.2,1);
@@ -186,8 +271,6 @@ body{
     transition: transform .3s cubic-bezier(0,0,.2,1),width .3s cubic-bezier(0,0,.2,1),height .3s cubic-bezier(0,0,.2,1),opacity .6s cubic-bezier(0,0,.2,1),-webkit-transform .3s cubic-bezier(0,0,.2,1);
     transition: transform .3s cubic-bezier(0,0,.2,1),width .3s cubic-bezier(0,0,.2,1),height .3s cubic-bezier(0,0,.2,1),opacity .6s cubic-bezier(0,0,.2,1),-webkit-transform .3s cubic-bezier(0,0,.2,1);
 }
-
-
 
 .mdl-button_ripple-container{
     display: block;
@@ -256,51 +339,8 @@ a:-webkit-any-link {
     animation: spin-sprite-small 5s steps(24) infinite;
 }
 
-.fp-tableCell {
-    display: block;
-}
-.welcome-slide {
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-}
-
-iframe.fullScreen {
-    width: 100%;
-    height:100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.welcome-text {
-    font-size: 1em;
-}
-
-.special-text{
-    margin: 0em 0em 0em 2em;
-}
-
-.hidden1, .hidden2, .hidden3, .hidden4 {
-    opacity : 0;
-    transition: all .3s ease;
-}
-
-#vrview {
-    height: 100%;
-}
-
-.background-img {
-    background: url(assets/img/landscape_salinas.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    color: white;
+.third-content-text-container {
+    display:table;
 }
 
 .material-icons {
@@ -317,6 +357,56 @@ iframe.fullScreen {
   -webkit-animation: slider 10s infinite alternate;
     
 }
+.fourth-content-section{
+    background: url("assets/img/cavour_club.jpg") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+
+/**360 animation **/
+
+@keyframes spin-sprite-small {
+    0% {
+        background-position-x:  .5px;
+    }
+    
+    100%, 15% {
+        background-position-x: 1104px;
+    }
+}
+
+@keyframes grow {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    35% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    
+    90% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+.active .animation-delay--2{
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.active .animation--grow {
+    -webkit-animation: grow 1.4s 2 ease-in-out;
+    animation: grow 1.4s 2 ease-in-out;
+}
+
+/*https://stackoverflow.com/questions/21562331/fading-between-background-images-using-only-html-css-js*/
 
 @-webkit-keyframes slider {
     from {
@@ -330,18 +420,7 @@ iframe.fullScreen {
     }
 }
 
-.third-content-text-container {
-    display:table;
-}
-
-.inside-club-text {
-    position: absolute;
-    color: white;
-    z-index: 2;
-    margin: 4em 0em 0em 4.5em;
-    text-shadow: 5px 5px black;
-}
-
+/**Mckinley Park **/
 .seventh-content-section{
     background: url("assets/img/mckinley_park.png") center;
     -webkit-background-size: cover;
@@ -350,6 +429,7 @@ iframe.fullScreen {
     background-size:cover;
 }
 
+/**Media queries **/
 @media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;

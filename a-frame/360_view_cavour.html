@@ -11,12 +11,12 @@
     </head>
     <body>
         <script>
+        // https://glitch.com/edit/#!/smiling-armchair
         AFRAME.registerComponent('audiohandler', {
             init:function() {
             let playing = false;
             let audio = this.el.components.sound;
             this.el.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg");
-            
             this.el.addEventListener('click', () => {
                 if(!playing) {
                 audio.playSound();
@@ -33,6 +33,8 @@
                 <img id="pano1" src="../assets/img/pano/streetView.jpg">    
             </a-assets >
             <a-sky src="#pano1" ></a-sky>
+            <!--https://github.com/aframevr/aframe/blob/master/docs/components/geometry.md-->
+            <!--https://github.com/aframevr/aframe/blob/master/docs/components/sound.md-->
             <a-sound geometry="primitive:box; width: 1; height: 1; depth: 1;"
                  position="1 0 -5"
                  autoplay="false"

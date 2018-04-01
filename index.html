@@ -46,7 +46,7 @@
   </head>
   <body>
       <div id="fullpage">
-        <section class="welcome-section section" data-anchor="firstPage">
+        <section class="welcome-section section" data-anchor="welcome">
             <div class="welcome-slide hidden1">
                 <p class="welcome-text">Welcome To</p>
             </div> 
@@ -54,16 +54,47 @@
                 <p class="welcome-text">The Communal Living Archive</p>
             </div>
             <div class="welcome-slide hidden3">
-                <p class="welcome-text special-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</p>
+                <span class="welcome-text special-text">Stories from Sexually Diverse</span> <span class="welcome-text special-text">and Transgender Migrant </span>
+                <span class="welcome-text special-text">Farmworkers</span>
             </div>
             <div class="welcome-slide hidden4 background-img">
-                <p class="welcome-text special-text">Stories from Sexually Diverse and Transgender Migrant Farmworkers</p>
+                <span class="welcome-text special-text">Stories from Sexually Diverse</span> 
+                <span class="welcome-text special-text">and Transgender Migrant</span>
+                <span class="welcome-text special-text">Farmworkers</span>
             </div>
         </section>
-        <section class="second-content-section section" data-anchor="secondPage" id="second-section" style="background-color:purple;">
-                <div class="second-content-slide">
-                    <h1> I'm in the second section</h1>
+        <section class="second-content-section section" data-anchor="what-is-agriculture" id="second-section">
+                <div class="second-content-slide agr-bg" id="agr">
+                    <div class="ag-and-you">
+                        <span>The Agriculture Industry and You</span>
+                    </div>
                 </div>
+          </section>
+          <section class="second-content-section section" data-anchor="what-is-agriculture-1" id="second-section">
+            <div class="second-content-slide agr-bg-2" id="agr">
+              <div class="ag-quote agr-bg-2">
+                  <span>Agriculture, food, and related industries</span> 
+                  <span>contributed $992 billion </span>
+                  <span>to U.S. gross domestic product in 2015</span>
+                </div>
+              </div>
+          </section>
+          <section class="second-content-section section" data-anchor="what-is-agriculture-2" id="second-section">
+            <div class="second-content-slide agr-bg-3" id="agr">
+                <div class="ag-quote agr-bg-3">
+                    <span>Over a third of the country’s vegetables</span>
+                    <span>and two-thirds of the country’s fruits and nuts </span>
+                    <span>are grown in California</span>
+                </div>
+              </div>
+          </section>
+          <section class="second-content-section section" data-anchor="what-is-agriculture-3" id="second-section">
+            <div class="second-content-slide agr-bg-4" id="agr">
+                <div class="ag-quote agr-bg-4">
+                    <span>In 2016 California’s farms and ranches </span>
+                    <span>received over $46 billion for their output. </span> 
+                </div>
+              </div>
           </section>
           <section class="third-content-section section" bg-3 data-anchor="thirdPage" id="third-section">
                 <div class="third-content-slide fadein">
@@ -135,9 +166,9 @@
                 </div>
           </div>
         </section>
-
         </div>
       <script>  
+          //https://stackoverflow.com/questions/48449449/fade-in-fade-out-a-series-of-divs
           var elements = ['hidden1', 'hidden2', 'hidden3', 'hidden4'];
 
           for (let i = 0; i < elements.length; i++) {
@@ -150,7 +181,8 @@
                 }, 2500 * (i + 1));
             }
         }
-    
+        
+          //https://stackoverflow.com/questions/47175281/how-to-change-content-of-i-classmaterial-icons-as-it-was-a-p
           var aud1 = document.getElementById('inside-club');
           
           if(aud1){
