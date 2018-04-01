@@ -41,20 +41,22 @@ body{
 /**Agriculture Industry **/
 
 .second-content-slide {
-    opacity : 0;
-    transition: all .3s ease;
     height: 100%;
+    width: 100%;
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(assets/img/field_1.JPG) no-repeat center center fixed;
+    color: white;
+}
+
+.agr-bg {
+     background: url(assets/img/field_1.JPG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
-    color: white;
 }
 
 /**Cavour Club **/
