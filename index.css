@@ -130,6 +130,28 @@ body{
     1px 1px 0 #000;  
 }
 
+/**Harassment in the Fields **/
+.har-bg {
+        height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: url(assets/img/har_1.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
 
 
 /**Cavour Club **/
