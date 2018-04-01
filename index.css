@@ -339,7 +339,7 @@ a:-webkit-any-link {
     animation: spin-sprite-small 5s steps(24) infinite;
 }
 
-.third-content-text-container {
+.fourth-content-text-container {
     display:table;
 }
 
@@ -357,7 +357,7 @@ a:-webkit-any-link {
   -webkit-animation: slider 10s infinite alternate;
     
 }
-.fourth-content-section{
+.fifth-content-section{
     background: url("assets/img/cavour_club.jpg") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -421,7 +421,7 @@ a:-webkit-any-link {
 }
 
 /**Mckinley Park **/
-.seventh-content-section{
+.eighth-content-section{
     background: url("assets/img/mckinley_park.png") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
