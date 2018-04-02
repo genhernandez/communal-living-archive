@@ -8,30 +8,32 @@
      <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
      <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+     <script src="component/soccer-audiohandler.js"></script>
     </head>
     <body>
         <script>
             
         // https://glitch.com/edit/#!/smiling-armchair
-        AFRAME.registerComponent('audiohandler', {
-            init:function() {
-            let playing = false;
-            let audio = this.el.components.sound;
-            this.el.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg");
-            
-            this.el.addEventListener('click', () => {
-                if(!playing) {
-                audio.playSound();
-                } else {
-                audio.pauseSound();
-                }
-            playing = !playing;
-            });
-        }
-        })
+//        AFRAME.registerComponent('audiohandler', {
+//            init:function() {
+//            let playing = false;
+//            let audio = this.el.components.sound;
+//            this.el.setAttribute("src", "#soccer-game");
+//            
+//            this.el.addEventListener('click', () => {
+//                if(!playing) {
+//                audio.playSound();
+//                } else {
+//                audio.pauseSound();
+//                }
+//            playing = !playing;
+//            });
+//        }
+//        })
     </script>
         <a-scene cursor="rayOrigin:mouse">
             <a-assets>
+                <audio id="soccer-game" src="/assets/audio/lesbian_soccer_game.wav"></audio>
                 <img id="pano1" src="../assets/img/pano/mcKinley-StreetView.jpg">    
             </a-assets >
             <a-sky src="#pano1" ></a-sky>
@@ -40,7 +42,7 @@
             <a-sound geometry="primitive:box; width: 1; height: 1; depth: 1;"
                  position="1 0 -5"
                  autoplay="false"
-                 audiohandler></a-sound>
+                 soccer-audiohandler></a-sound>
             
         </a-scene>
     </body>
