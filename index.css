@@ -68,11 +68,6 @@ body{
 
 .agr-bg-2 {
     width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: white;
     background: url(assets/img/field_2.JPG);
     -webkit-background-size: cover;
@@ -86,7 +81,7 @@ body{
     height: 100%;
     width: 100%;
     display: flex;
-    position: fixed;
+/*    position: fixed;*/
     align-items: center;
     justify-content: center;
     flex-direction: column;
