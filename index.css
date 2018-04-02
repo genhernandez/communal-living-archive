@@ -67,13 +67,7 @@ body{
 }
 
 .agr-bg-2 {
-    height: 100%;
     width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: white;
     background: url(assets/img/field_2.JPG);
     -webkit-background-size: cover;
@@ -87,7 +81,6 @@ body{
     height: 100%;
     width: 100%;
     display: flex;
-    position: fixed;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -103,45 +96,25 @@ body{
 .agr-bg-3 {
     height: 100%;
     width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
     background: url(assets/img/field_3.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size:cover;
-    font-size: 0.8em;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+}
+
+.ag-quote-sm {
+    font-size: 0.6em;
 }
 
 .agr-bg-4 {
     height: 100%;
     width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
     background: url(assets/img/field_4.JPG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size:cover;
-    font-size: 0.8em;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    background-size:cover; 
+    
 }
 
 /**Harassment in the Fields **/
@@ -628,6 +601,11 @@ a:-webkit-any-link {
     font-size: 0.55em;
     margin-top: 45%;
     margin-left: 5%;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .park-bg-title {
@@ -660,6 +638,11 @@ a:-webkit-any-link {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .park-bg-2 {
