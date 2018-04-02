@@ -52,12 +52,13 @@ body{
 }
 
 .agr-bg {
-     background: url(assets/img/field_1.JPG);
+    background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
-        font-size: 0.8em;
+    font-size: 0.8em;
+    color: black;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -572,7 +573,59 @@ a:-webkit-any-link {
     }
 }
 
+@-webkit-keyframes slider-2 {
+    from {
+        background: url("assets/img/mckinley-2-1.jpg") no-repeat;
+    }
+    50% {
+        background: url("assets/img/mckinley-3-1.jpg") no-repeat;
+    }
+    to {
+        background: url("assets/img/mckinley-2-1.jpg") no-repeat;
+    }
+}
+
+
 /**Mckinley Park **/
+.park-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    color: white;
+    background: url(assets/img/mckinnley-1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.park-bg-txt {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    text-align:left;
+    flex-direction: column;
+    font-size: 0.55em;
+    margin-top: 45%;
+    margin-left: 5%;
+}
+
+.park-bg-title {
+    font-size: 0.75em;
+    margin-top: 18%;
+    margin-left: 35%;
+}
+.park-bg-title {
+    color: white;
+}
 .ninth-content-section{
     background: url("assets/img/mckinley_park.png") center;
     -webkit-background-size: cover;
@@ -580,6 +633,31 @@ a:-webkit-any-link {
     -o-background-size: cover;
     background-size:cover;
 }
+
+.park-bg-txt-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+.park-txt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.park-bg-2 {
+  position: relative;
+  width:100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-animation: slider-2 10s infinite alternate;
+}
+
 
 /**Media queries **/
 @media only screen and (max-width: 420px){

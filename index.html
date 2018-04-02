@@ -58,9 +58,9 @@
                 <span class="welcome-text special-text">Farmworkers</span>
             </div>
             <div class="welcome-slide hidden4 background-img">
-                <span class="welcome-text special-text">Stories from Sexually Diverse</span> 
-                <span class="welcome-text special-text">and Transgender Migrant</span>
-                <span class="welcome-text special-text">Farmworkers</span>
+                <span class="welcome-text special-text" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Stories from Sexually Diverse</span> 
+                <span class="welcome-text special-text" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">and Transgender Migrant</span>
+                <span class="welcome-text special-text" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Farmworkers</span>
             </div>
         </section>
         <section class="second-content-section section" data-anchor="what-is-agriculture" id="second-section">
@@ -174,25 +174,38 @@
                 </div>
             </div>
         </section>
-        <section class="seventh-content-section section" data-anchor="seventhPage" id="seventh-section" style="background-color:yellow;">
-                <div class="seventh-content-slide">
-                    <h1> I'm in the fifth section</h1>
+        <section class="seventh-content-section section" data-anchor="this-is-mckinley-park" id="seventh-section">
+                <div class="seventh-content-slide  park-bg">
+                    <div class="park-bg-title">
+                    <span>McKinley Park</span>
+                    </div>
+                    <div class="park-bg-txt">
+                        <span>Here you can find a team made up </span>
+                        <span>of Mexican Lesbian soccer players 
+                        </span>
+                        <span>who enjoy spending time with their community.</span>
+                    </div>
                 </div>
         </section>
-        <section class="eighth-content-section section" data-anchor="eighthPage" id="eighth-section" style="background-color:orange;">
-                <div class="eighth-content-slide">
-                    <h1> I'm in the sixth section</h1>
+        <section class="eighth-content-section section" data-anchor="this-is-mckinley-park-2" id="eighth-section">
+                <div class="eighth-content-slide park-bg-2">
+                     <i class="material-icons" id="icon-2" style="color:white;">volume_off</i>
+                    <audio id="soccer-game" src="assets/audio/lesbian_soccer_game.wav" preload="auto" loop></audio>
+                    <div class="park-bg-txt-2">
+                        <span class="park-txt"> Listen to a game</span>
+                    </div>
                 </div>
         </section>
-        <section class="ninth-content-section section" data-anchor="ninthPage" id="ninth-section">
+        <section class="ninth-content-section section" data-anchor="this-is-mckinley-park-3" id="ninth-section">
           <div class="button-container row launch-360">
             <div class="col-md vr-col">
-                <p class="content-txt" style="color:white;">This is McKinley Park</p>
-                <p class="vr-button-text">Visit Mckinley Park</p>
+                <p class="content-txt" style="color:white; font-size: 3.8em; margin-right: -80%;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">This is McKinley Park</p>
+
+                <p class="vr-button-text" style="color:black;">Visit Mckinley Park</p>
                 <a href="a-frame/vr_environment_2.html" class="btn btn-danger vr-button" style="color:white;">Go to Environment</a>
               </div>
               <div class="col-md three-sixty-col" >
-                        <p class="three-sixty-col-text">Visit McKinley Park in 360</p>
+                        <p class="three-sixty-col-text" style="color:black;">Visit McKinley Park in 360</p>
                     <div class="launch-360">
                         <div class="component_cta_container animation--grow animation-delay--2 cta--colored-alpha js-show-pano mdl-button--360 is-hidden-edge">
                             <a class="mdl-button mdl-button--fab component_cta mdl-js-ripple-effect mdl-js-button" href="a-frame/360_view_mckinley.html">
@@ -237,7 +250,21 @@
                       document.getElementById("icon").innerHTML = "volume_off";
                   }
               })
-          }          
+          }  
+          
+          var aud2 = document.getElementById('soccer-game');
+          
+          if(aud2){
+              document.getElementById("icon-2").addEventListener("click", function() {
+                  if(aud2.paused){
+                      aud2.play();
+                      document.getElementById("icon-2").innerHTML="volume_up";
+                  } else {
+                      aud2.pause();
+                      document.getElementById("icon-2").innerHTML = "volume_off";
+                  }
+              })
+          }      
       </script>
   </body>
     
