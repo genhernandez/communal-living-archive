@@ -130,7 +130,99 @@ body{
     1px 1px 0 #000;  
 }
 
+/**Harassment in the Fields **/
+.har-bg {
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;  
+}
 
+.har-bg-2 {
+    height: 100%;
+    width: 100%;
+    background: url(assets/img/har_2.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.har-quote {
+    width: 100%;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 0.8em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.har-quote-2 {
+    width: 100%;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+.har-quote-l {
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 1.5em;
+}
+
+.har-quote-r {
+    font-size: 0.5em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.har-quote-c {
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.har-bg-3 {
+    height: 100%;
+    width: 100%;
+    background: url(assets/img/har_1.JPG);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    font-size: 0.8em;  
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
 
 /**Cavour Club **/
 
@@ -339,7 +431,7 @@ a:-webkit-any-link {
     animation: spin-sprite-small 5s steps(24) infinite;
 }
 
-.third-content-text-container {
+.fourth-content-text-container {
     display:table;
 }
 
@@ -357,7 +449,7 @@ a:-webkit-any-link {
   -webkit-animation: slider 10s infinite alternate;
     
 }
-.fourth-content-section{
+.fifth-content-section{
     background: url("assets/img/cavour_club.jpg") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -421,7 +513,7 @@ a:-webkit-any-link {
 }
 
 /**Mckinley Park **/
-.seventh-content-section{
+.eighth-content-section{
     background: url("assets/img/mckinley_park.png") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
