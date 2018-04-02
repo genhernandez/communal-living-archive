@@ -12,6 +12,11 @@ body{
 
 /** Welcome Slide **/
 
+.lang-icon{
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: 2%;
+}
 .bounce {
 	-moz-animation: bounce 5s infinite;
 	-webkit-animation: bounce 5s infinite;
@@ -138,7 +143,7 @@ body{
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.6em;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -156,7 +161,7 @@ body{
 }
 
 .ag-quote-sm {
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
 .agr-bg-4 {
@@ -226,19 +231,19 @@ body{
     font-size: 0.8em;
 }
 .har-quote-l {
-    font-size: 0.5em;
+    font-size: 0.6em;
     text-align: left;
     margin-left: 1.5em;
 }
 
 .har-quote-r {
-    font-size: 0.5em;
+    font-size: 0.6em;
     text-align: right;
     margin-right: 0.5em;
 }
 
 .har-quote-c {
-    font-size: 0.5em;
+    font-size: 0.6em;
     text-align: center;
 }
 
@@ -336,7 +341,7 @@ body{
     position: absolute;
     color: white;
     z-index: 2;
-    margin: 4em 0em 0em 4.5em;
+    margin: 4em 0em 0em 2.5em;
     text-shadow: 5px 5px black;
 }
 
@@ -651,7 +656,7 @@ a:-webkit-any-link {
     justify-content: center;
     text-align:left;
     flex-direction: column;
-    font-size: 0.55em;
+    font-size: 0.45em;
     margin-top: 40%;
     margin-left: 5%;
     text-shadow:
