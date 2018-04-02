@@ -18,7 +18,7 @@
             init:function() {
             let playing = false;
             let audio = this.el.components.sound;
-            this.el.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg");
+            this.el.setAttribute("src", "#cavour-club");
             
             this.el.addEventListener('click', () => {
                 if(!playing) {
@@ -32,12 +32,15 @@
         })
     </script>
     <a-scene cursor="rayOrigin:mouse" environment ="preset: dream" >
+        <a-assets>
+            <audio id="cavour-club" src="/assets/audio/inside_cavour_club.wav"></audio>
+        </a-assets>
         <!--https://github.com/aframevr/aframe/blob/master/docs/components/geometry.md-->
         <!--https://github.com/aframevr/aframe/blob/master/docs/components/sound.md-->
         <a-sound geometry="primitive:box; width: 1; height: 1; depth: 1;"
                  position="1 1 -5"
                  autoplay="false"
-                 audiohandler></a-sound>
+                 audiohandler src='#cavour-club'></a-sound>
     </a-scene>
   </body>
 </html>

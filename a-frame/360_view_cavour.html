@@ -16,7 +16,7 @@
             init:function() {
             let playing = false;
             let audio = this.el.components.sound;
-            this.el.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bizet_-_Carmen_-_Toreador_Song_%28French%2C_Musopen%29.ogg");
+            this.el.setAttribute("src", "#cavour-club");
             this.el.addEventListener('click', () => {
                 if(!playing) {
                 audio.playSound();
@@ -30,6 +30,7 @@
     </script>
         <a-scene cursor="rayOrigin:mouse">
             <a-assets>
+                <audio id="cavour-club" src="/assets/audio/inside_cavour_club.wav"></audio>                
                 <img id="pano1" src="../assets/img/pano/streetView.jpg">    
             </a-assets >
             <a-sky src="#pano1" ></a-sky>
@@ -38,7 +39,7 @@
             <a-sound geometry="primitive:box; width: 1; height: 1; depth: 1;"
                  position="1 0 -5"
                  autoplay="false"
-                 audiohandler></a-sound>
+                 audiohandler src="#cavour-club"></a-sound>
             
         </a-scene>
     </body>
