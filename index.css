@@ -57,6 +57,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
+        font-size: 0.8em;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -224,7 +225,66 @@ body{
     1px 1px 0 #000;  
 }
 
+/** Resistance **/
+
+.com-res-bg {
+    background: white;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 0.5em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+        width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.com-res-bg-txt-container {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /**Cavour Club **/
+
+.cav-bg {
+    background: url(assets/img/cavour.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 0.5em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cav-txt-container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
 .content-txt {
     font-size: 3.8em;
@@ -431,7 +491,7 @@ a:-webkit-any-link {
     animation: spin-sprite-small 5s steps(24) infinite;
 }
 
-.fourth-content-text-container {
+.fifth-content-text-container {
     display:table;
 }
 
@@ -449,7 +509,7 @@ a:-webkit-any-link {
   -webkit-animation: slider 10s infinite alternate;
     
 }
-.fifth-content-section{
+.sixth-content-section{
     background: url("assets/img/cavour_club.jpg") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -513,7 +573,7 @@ a:-webkit-any-link {
 }
 
 /**Mckinley Park **/
-.eighth-content-section{
+.ninth-content-section{
     background: url("assets/img/mckinley_park.png") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
