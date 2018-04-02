@@ -62,8 +62,12 @@
                 <span class="welcome-text special-text" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">and Transgender Migrant</span>
                 <span class="welcome-text special-text" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Farmworkers</span>
             </div>
+             <div class="welcome-slide hidden4 scroll-text">
+                <span style="font-size: 0.5em; margin-top: 45%; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Scroll Down To Continue</span>
+            </div>
+            
         </section>
-        <section class="second-content-section section" data-anchor="what-is-agriculture" id="second-section">
+        <section class="second-content-section scrollToHere section" data-anchor="what-is-agriculture" id="second-section">
                 <div class="second-content-slide agr-bg" id="agr">
                     <div class="ag-and-you">
                         <span>The Agriculture Industry and You</span>
@@ -264,7 +268,12 @@
                       document.getElementById("icon-2").innerHTML = "volume_off";
                   }
               })
-          }      
+          } 
+          
+          $('#arrow').click(function(){
+              $('html,body').animate({
+                  scrollTop: $(".scrollToHere").offset().top}, 'slow');
+              });
       </script>
   </body>
     
