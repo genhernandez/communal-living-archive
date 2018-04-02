@@ -132,19 +132,43 @@ body{
 
 /**Harassment in the Fields **/
 .har-bg {
-        height: 100%;
+    height: 100%;
     width: 100%;
+    background: white;
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
-    background: url(assets/img/har_1.JPG);
+    color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
+    font-size: 0.8em;  
+}
+
+.har-bg-2 {
+    height: 100%;
+    width: 100%;
+    background: url(assets/img/har_2.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.har-quote {
+    width: 100%;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
     font-size: 0.8em;
     text-shadow:
     -1px -1px 0 #000,
@@ -152,7 +176,17 @@ body{
     -1px 1px 0 #000,
     1px 1px 0 #000;  
 }
+.har-quote-l {
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 1.5em;
+}
 
+.har-quote-r {
+    font-size: 0.5em;
+    text-align: right;
+    margin-right: 0.5em;
+}
 
 /**Cavour Club **/
 
