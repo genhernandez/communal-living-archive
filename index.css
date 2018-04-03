@@ -711,7 +711,29 @@ a:-webkit-any-link {
   -webkit-animation: slider-2 10s infinite alternate;
 }
 
+/** Conclusion **/
+.conclusion-bg {
+    background: white;
+    height:100%;
+    width:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
 
+.conclusion-txt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 0.6em;
+    
+}
 /**Media queries **/
 @media only screen and (max-width: 420px){
     body {
