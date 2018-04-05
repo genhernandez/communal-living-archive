@@ -12,6 +12,18 @@ body{
 
 /** Welcome Slide **/
 
+.scroll-text {
+    font-size: 0.5em;
+    margin-top: 15%; 
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.welcome-text {
+    font-size: 0.8em;
+}
+.container {
+    margin: 0;
+    padding:0;
+}
 .lang-icon{
     margin-right: auto;
     margin-top: auto;
@@ -69,9 +81,6 @@ body{
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
-}
-.welcome-text {
-    font-size: 1em;
 }
 
 .hidden1, .hidden2, .hidden3, .hidden4 {
@@ -735,6 +744,32 @@ a:-webkit-any-link {
     
 }
 /**Media queries **/
+
+@media only screen and (max-width: 1160px){
+    .welcome-text {
+        font-size: 0.6em;
+    }
+    
+    .scroller-text {
+        font-size: 0.3em;
+    }
+    
+    .ag-and-you {
+        font-size: 0.8em;
+    }
+    
+    .ag-quote {
+        font-size: 0.5em;
+    }
+    
+    .park-bg-txt {
+        margin-top: 55%;
+    }
+    
+    .conclusion-txt {
+        font-size: 0.5em;
+    }
+}
 @media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;
@@ -751,7 +786,7 @@ a:-webkit-any-link {
     
     .vr-button-text {
         font-size: 0.65em;
-    }
+    }s
     
     .vr-button {
         width: 50%;
