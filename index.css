@@ -769,6 +769,11 @@ a:-webkit-any-link {
     .conclusion-txt {
         font-size: 0.5em;
     }
+    
+    .vr-button-text {
+        margin-bottom: 2em;
+        font-size: 0.6em;
+    }
 }
 @media only screen and (max-width: 420px){
     body {
