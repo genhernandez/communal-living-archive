@@ -774,6 +774,11 @@ a:-webkit-any-link {
         margin-bottom: 2em;
         font-size: 0.6em;
     }
+    
+    .three-sixty-col-text {
+        margin-bottom: 2em;
+        font-size: 0.6em;
+    }
 }
 @media only screen and (max-width: 420px){
     body {
