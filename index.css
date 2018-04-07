@@ -852,9 +852,15 @@ a:-webkit-any-link {
 /**when screen is smaller than 1665px **/
 @media only screen and (max-width: 1665px){
     .har-quote {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
     
+}
+
+@media only screen and (max-width: 1250px){
+    .har-quote {
+        font-size: 0.6em;
+    }
 }
 /**when screen is smaller than 1160px **/
 @media only screen and (max-width: 1160px){
