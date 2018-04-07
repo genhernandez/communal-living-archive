@@ -24,6 +24,14 @@ body{
     margin: 0;
     padding:0;
 }
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .lang-icon{
     margin-right: auto;
     margin-top: auto;
@@ -350,7 +358,12 @@ body{
     position: absolute;
     color: white;
     z-index: 2;
-    margin: 4em 0em 0em 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+/*    margin: 4em 0em 0em 2.5em;*/
     text-shadow: 5px 5px black;
 }
 
@@ -545,13 +558,18 @@ a:-webkit-any-link {
 }
 
 .fifth-content-text-container {
-    display:table;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .material-icons {
     position: absolute;
     z-index: 2;
     margin: 1em 0em 0em 1em; 
+    font-size: 0.4em;
 }
 
 .fadein {
@@ -718,7 +736,8 @@ a:-webkit-any-link {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
 .park-txt {
     height: 100%;
     width: 100%;
@@ -767,6 +786,7 @@ a:-webkit-any-link {
 }
 /**Media queries **/
 
+/**when screen is greater than 1612px **/
 @media only screen and (min-width: 1612px){
     .fadein {
         position: relative;
@@ -776,13 +796,15 @@ a:-webkit-any-link {
         -webkit-animation: cavour-slider-lg 10s infinite alternate;   
     }
     
+/*
     .inside-club-text {
-        position: absolute;
-        color: white;
-        z-index: 2;
+        position:absolute;
+        color:white;
+        z-index:2;
         margin: 4em 0em 0em 7.5em;
         text-shadow: 5px 5px black;
     }
+*/
     
     .park-bg-2 {
         position: relative;
@@ -791,10 +813,15 @@ a:-webkit-any-link {
         background-size: cover;
         -webkit-animation: mckinley-slider-lg 10s infinite alternate;
     }
-
-    
 }
 
+/**when screen is smaller than 1612px**/ 
+@media only screen and (max-width: 1612px) {
+    .har-quote {
+        font-size: 0.7em;
+    }
+}
+/**when screen is smaller than 1160px **/
 @media only screen and (max-width: 1160px){
     .welcome-text {
         font-size: 0.6em;
@@ -830,6 +857,8 @@ a:-webkit-any-link {
         font-size: 0.6em;
     }
 }
+
+/** when screen is smaller than 420px **/
 @media only screen and (max-width: 420px){
     body {
         font-size: 0.5em;
