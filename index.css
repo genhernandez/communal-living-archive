@@ -757,7 +757,7 @@ a:-webkit-any-link {
 }
 /**Media queries **/
 
-@media only screen and (min-width: 1512){
+@media only screen and (min-width: 1512px){
     .fadein {
         position: relative;
         width:100%;
