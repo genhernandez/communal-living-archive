@@ -559,9 +559,9 @@ a:-webkit-any-link {
   width:100%;
   height: 100%;
   background-size: cover;
-  -webkit-animation: slider 10s infinite alternate;
-    
+  -webkit-animation: slider 10s infinite alternate;   
 }
+
 .sixth-content-section{
     background: url("assets/img/cavour_club.jpg") center;
     -webkit-background-size: cover;
@@ -622,6 +622,18 @@ a:-webkit-any-link {
     }
     to {
         background: url("assets/img/inside_cavour_1_2.jpg") no-repeat;
+    }
+}
+
+@-webkit-keyframes cavour-slider-lg {
+    from {
+        background: url("assets/img/inside_cavour_1_2_lg.jpg") no-repeat;
+    }
+    50% {
+        background: url("assets/img/inside_cavour_4_2_lg.jpg") no-repeat;
+    }
+    to {
+        background: url("assets/img/inside_cavour_1_2_lg.jpg") no-repeat;
     }
 }
 
@@ -744,6 +756,17 @@ a:-webkit-any-link {
     
 }
 /**Media queries **/
+
+@media only screen and (min-width: 1512){
+    .fadein {
+        position: relative;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        -webkit-animation: cavour-slider-lg 10s infinite alternate;   
+    }
+    
+}
 
 @media only screen and (max-width: 1160px){
     .welcome-text {
