@@ -104,7 +104,7 @@ body{
 }
 
 
-.background-img:before {
+.background-img::before {
     content: '';
     display:block;
     position:absolute;
@@ -148,7 +148,7 @@ body{
     1px 1px 0 #000;  
 }
 
-.agr-bg-2:before {
+.agr-bg-2::before {
     width: 100%;
     color: white;
     content: '';
@@ -181,7 +181,7 @@ body{
     1px 1px 0 #000;
 }
 
-.agr-bg-3:before {
+.agr-bg-3::before {
     content: '';
     display:block;
     position:absolute;
@@ -199,7 +199,7 @@ body{
     font-size: 0.5em;
 }
 
-.agr-bg-4:before {
+.agr-bg-4::before {
     content: '';
     display:block;
     position:absolute;
@@ -233,7 +233,7 @@ body{
     font-size: 0.8em;  
 }
 
-.har-bg-2:before {
+.har-bg-2::before {
     height: 100%;
     width: 100%;
     content: '';
@@ -705,7 +705,7 @@ a:-webkit-any-link {
     }
 }
 /**Mckinley Park **/
-.park-bg:before {
+.park-bg::before {
     height: 100%;
     width: 100%;
     content: '';
