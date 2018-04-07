@@ -711,7 +711,7 @@ a:-webkit-any-link {
     content: '';
     display:block;
     position:absolute;
-    opacity: 0.8;
+    opacity: 0.7;
     background: url(assets/img/mckinnley-1.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -845,6 +845,14 @@ a:-webkit-any-link {
 @media only screen and (max-width: 1612px) {
     .har-quote {
         font-size: 0.7em;
+    }
+    
+}
+
+/**when screen is smaller than 1380px **/
+@media only screen and (max-width: 1380px){
+    .har-quote {
+        font-size: 0.6em;
     }
     
 }
