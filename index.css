@@ -104,13 +104,20 @@ body{
 }
 
 
-.background-img {
+.background-img:before {
+    content: '';
+    display:block;
+    position:absolute;
+    z-index:1;
+    width: 100%;
+    height:100%;
     background: url(assets/img/landscape_salinas.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
     color: white;
+    opacity: 0.9;
 }
 
 /**Agriculture Industry **/
@@ -127,7 +134,7 @@ body{
 }
 
 .agr-bg {
-    background: white;
+    background: #F8f8f8;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -141,9 +148,16 @@ body{
     1px 1px 0 #000;  
 }
 
-.agr-bg-2 {
+.agr-bg-2:before {
     width: 100%;
     color: white;
+    content: '';
+    display:block;
+    position:absolute;
+    z-index:1;
+    width: 100%;
+    height:100%;
+    opacity: 0.9;
     background: url(assets/img/field_2.JPG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -196,7 +210,7 @@ body{
 .har-bg {
     height: 100%;
     width: 100%;
-    background: white;
+    background: #F8f8f8;
     display: flex;
     position: fixed;
     align-items: center;
@@ -289,7 +303,7 @@ body{
 /** Resistance **/
 
 .com-res-bg {
-    background: white;
+    background: #F8f8f8;
     height: 100%;
     width: 100%;
     color: black;
@@ -763,7 +777,7 @@ a:-webkit-any-link {
 
 /** Conclusion **/
 .conclusion-bg {
-    background: white;
+    background: #F8f8f8;
     height:100%;
     width:100%;
     -webkit-background-size: cover;
@@ -795,17 +809,7 @@ a:-webkit-any-link {
         background-size: cover;
         -webkit-animation: cavour-slider-lg 10s infinite alternate;   
     }
-    
-/*
-    .inside-club-text {
-        position:absolute;
-        color:white;
-        z-index:2;
-        margin: 4em 0em 0em 7.5em;
-        text-shadow: 5px 5px black;
-    }
-*/
-    
+
     .park-bg-2 {
         position: relative;
         width:100%;
@@ -820,6 +824,7 @@ a:-webkit-any-link {
     .har-quote {
         font-size: 0.7em;
     }
+    
 }
 /**when screen is smaller than 1160px **/
 @media only screen and (max-width: 1160px){
