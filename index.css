@@ -941,6 +941,9 @@ a:-webkit-any-link {
 
 /** when screen is smaller than 900px **/
 @media only screen and (max-width: 900px){
+    body {
+        font-size: 0.8em;
+    }
     .har-bg {
         font-size: 0.6em;
     }
@@ -951,6 +954,10 @@ a:-webkit-any-link {
     
     .har-bg-3 {
         font-size: 0.6em;
+    }
+    
+    .conclusion-txt {
+        font-size: 0.3em;
     }
 }
 
