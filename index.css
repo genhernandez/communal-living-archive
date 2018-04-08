@@ -925,6 +925,18 @@ a:-webkit-any-link {
     .har-quote {
         font-size: 0.4em;
     }
+    
+    .ag-quote {
+        font-size: 0.4em;
+    }
+    
+    .com-res-bg {
+        font-size: 0.4em;
+    }
+    
+    .vr-button {
+        width: 25%;
+    }
 }
 
 
