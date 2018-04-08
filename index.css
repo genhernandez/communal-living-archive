@@ -964,7 +964,11 @@ a:-webkit-any-link {
 /** when screen is smaller than 650px **/
 @media only screen and (max-width: 650px){
     body {
-        font-size: 0.6em;
+        font-size: 0.5em;
+    }
+    
+    .vr-button {
+        width: 50%;
     }
 }
 /** when screen is smaller than 420px **/
@@ -984,7 +988,7 @@ a:-webkit-any-link {
     
     .vr-button-text {
         font-size: 0.65em;
-    }s
+    }
     
     .vr-button {
         width: 50%;
