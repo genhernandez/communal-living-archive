@@ -939,6 +939,20 @@ a:-webkit-any-link {
     }
 }
 
+/** when screen is smaller than 900px **/
+@media only screen and (max-width: 900px){
+    .har-bg {
+        font-size: 0.6em;
+    }
+    
+    .cav-txt-container {
+        font-size: 0.6em;
+    }
+    
+    .har-bg-3 {
+        font-size: 0.6em;
+    }
+}
 
 /** when screen is smaller than 420px **/
 @media only screen and (max-width: 420px){
