@@ -4,7 +4,67 @@ body{
     font-size: 100%;
     margin: 0;
     color: white;
+    overflow: visible;
+    height: initial;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    display:inline-block !important;
+}
+#menu {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;  
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: black;
+    text-shadow:-0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 1px 1px 0 #FFF;
+
+    background: transparent;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-style:solid;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+#menu li.active a {
+    color: #fff;
+    text-shadow: none;
+}
+
+#menu li a, #menu li.active a {
+    padding: 9px 18px;
+    display:block;
+}
+#menu li.active {
+    background: #666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+
+a:-webkit-any-link {
+    color: webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 .fp-tableCell {
     display: block;
@@ -598,6 +658,7 @@ a:-webkit-any-link {
     z-index: 2;
     margin: 1em 0em 0em 1em; 
     font-size: 0.4em;
+    left: 90%;
 }
 
 .fadein {

@@ -32,7 +32,8 @@
       <script>
         $(document).ready(function() {
 	       $('#fullpage').fullpage({
-               css3: true
+               css3: true,
+               menu: '#menu'
            });
         });
       </script>
@@ -45,8 +46,15 @@
     <title>Communal Living Archive</title>
   </head>
   <body>
-      
-      <div class="wrapper" id="fullpage">
+      <ul id="menu" class="hidden4 menu">
+        <li data-menuanchor="welcome"><a href='#welcome'>Welcome</a></li>
+        <li data-menuanchor="what-is-agriculture"><a href='#what-is-agriculture'>Agriculture and You</a></li>
+        <li data-menuanchor="harrasment-in-the-fields"><a href='#harrasment-in-the-fields'>Harassment in the Fields</a></li>
+        <li data-menuanchor="this-is-cavour"><a href='#this-is-cavour'>The Cavour Club</a></li>
+        <li data-menuanchor="this-is-mckinley-park"><a href='#this-is-mckinley-park'>McKinley Park</a></li>
+
+      </ul>
+      <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative;">
         <section class="welcome-section section container" data-anchor="welcome">
             <div class="welcome-slide hidden1">
                 <p class="welcome-text">Welcome To</p>
@@ -254,11 +262,11 @@
           for (let i = 0; i < elements.length; i++) {
             setTimeout(function() {
             $("." + elements[i]).css("opacity", "1");
-            }, 2500 * i);
+            }, 2000 * i);
             if (i < (elements.length - 1)) { //for displaying the last element
                 setTimeout(function() {
                 $("." + elements[i]).css("opacity", "0");
-                }, 2500 * (i + 1));
+                }, 2000 * (i + 1));
             }
         }
         
@@ -290,6 +298,7 @@
                   }
               })
           } 
+          
           
       </script>
   </body>
