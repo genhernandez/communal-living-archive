@@ -841,14 +841,6 @@ a:-webkit-any-link {
     }
 }
 
-/**when screen is smaller than 1612px**/ 
-@media only screen and (max-width: 1612px) {
-    .har-quote {
-        font-size: 0.7em;
-    }
-    
-}
-
 /**when screen is smaller than 1665px **/
 @media only screen and (max-width: 1665px){
     .har-quote {
@@ -857,7 +849,8 @@ a:-webkit-any-link {
     
 }
 
-@media only screen and (max-width: 1250px){
+/**when screen is smaller than 1480px **/
+@media only screen and (max-width: 1480px){
     .har-quote {
         font-size: 0.6em;
     }
