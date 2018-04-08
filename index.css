@@ -855,6 +855,13 @@ a:-webkit-any-link {
         font-size: 0.6em;
     }
 }
+
+/**when screen is smaller than 1250px **/
+@media only screen and (max-width: 1250px){
+    .har-quote {
+        font-size: 0.5em;
+    }
+}
 /**when screen is smaller than 1160px **/
 @media only screen and (max-width: 1160px){
     .welcome-text {
