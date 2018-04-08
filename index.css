@@ -904,10 +904,10 @@ a:-webkit-any-link {
     }
 }
 
-/**when screen is smaller than 1050px **/
-@media only screen and (max-width: 1050px){
-    .context-txt {
-        font-size: 3.0em;
+/**when screen is smaller than 1090px **/
+@media only screen and (max-width: 1090px){
+    .content-txt {
+        font-size: 2.5em;
     }
     
     .cav-txt-container {
