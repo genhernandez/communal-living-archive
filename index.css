@@ -918,6 +918,8 @@ a:-webkit-any-link {
         font-size: 0.6em;
     }
 }
+
+
 /** when screen is smaller than 420px **/
 @media only screen and (max-width: 420px){
     body {
