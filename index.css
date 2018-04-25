@@ -75,6 +75,7 @@ a:-webkit-any-link {
 .scroll-text {
     font-size: 0.5em;
     margin-top: 15%; 
+    /**text-shadow for outline**/
     text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .welcome-text {
@@ -98,11 +99,13 @@ a:-webkit-any-link {
     margin-left: 2%;
 }
 .bounce {
+    /**have to include all three for cross browser support **/
 	-moz-animation: bounce 5s infinite;
 	-webkit-animation: bounce 5s infinite;
 	animation: bounce 5s infinite;
 }
 @-moz-keyframes bounce {
+  /**percentages represent percentage of animation duration **/
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
