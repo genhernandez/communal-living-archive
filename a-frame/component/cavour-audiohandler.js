@@ -22,3 +22,4 @@ AFRAME.registerComponent('cavour-audiohandler', {
                 })
         }
     })
+
