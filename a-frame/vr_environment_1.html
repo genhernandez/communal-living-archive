@@ -13,11 +13,11 @@
     <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
          threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
     <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
-    <a-scene environment ="preset: dream" >
+    <a-scene cursor="rayOrigin:mouse" environment ="preset: dream" >
         <a-assets>
             <audio id="cavour-club" src="../assets/audio/inside_cavour_club.wav"></audio>
         </a-assets>
-        <a-entity camera="userHeight: 1.6; active:true" look-controls wasd-controls position="0 1 4"></a-entity>
+        <a-entity camera wasd-controls position="0 1 4"></a-entity>
 
         <!--https://github.com/aframevr/aframe/blob/master/docs/components/geometry.md-->
         <!--https://github.com/aframevr/aframe/blob/master/docs/components/sound.md-->
